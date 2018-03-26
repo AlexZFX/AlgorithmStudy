@@ -1,4 +1,4 @@
-package com.alexzfx.hamingDistance;
+package com.alexzfx.leetCode.hamingDistance;
 
 /**
  * Author : Alex

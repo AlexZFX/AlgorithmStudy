@@ -1,4 +1,4 @@
-package com.alexzfx.twoSum;
+package com.alexzfx.leetCode.twoSum;
 
 import java.util.HashMap;
 import java.util.Map;
