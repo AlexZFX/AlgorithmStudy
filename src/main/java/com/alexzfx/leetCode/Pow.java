@@ -1,9 +1,10 @@
-package com.alexzfx.leetCode.pow;
+package com.alexzfx.leetCode;
 
 /**
  * Author : Alex
  * Date : 2018/1/5 22:07
- * Description :Implement pow(x, n).
+ * Description : 50 fin
+ * Implement pow(x, n).
  */
 public class Pow {
 

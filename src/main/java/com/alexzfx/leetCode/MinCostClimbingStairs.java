@@ -1,4 +1,4 @@
-package com.alexzfx.leetCode.minCostClimbingStairs;
+package com.alexzfx.leetCode;
 
 /**
  * Author : Alex
@@ -8,8 +8,8 @@ package com.alexzfx.leetCode.minCostClimbingStairs;
  * reach the top of the floor,and you can either start from the step with index 0, or the step with index 1.
  */
 // TODO
-//public class MinCostClimbingStairs {
-//    public int minCostClimbingStairs(int[] cost) {
-//
-//    }
-//}
+public class MinCostClimbingStairs {
+    public int minCostClimbingStairs(int[] cost) {
+        return 0;
+    }
+}

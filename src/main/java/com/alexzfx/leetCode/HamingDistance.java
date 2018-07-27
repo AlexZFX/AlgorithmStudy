@@ -1,9 +1,10 @@
-package com.alexzfx.leetCode.hamingDistance;
+package com.alexzfx.leetCode;
 
 /**
  * Author : Alex
  * Date : 2018/1/5 21:28
- * Description :The Hamming distance between two integers is the number of positions at
+ * Description :
+ * The Hamming distance between two integers is the number of positions at
  * which the corresponding bits are different.Given two integers x and y, calculate the Hamming distance.
  */
 public class HamingDistance {

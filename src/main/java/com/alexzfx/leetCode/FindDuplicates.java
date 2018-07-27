@@ -1,4 +1,4 @@
-package com.alexzfx.leetCode.findDuplicates;
+package com.alexzfx.leetCode;
 
 import java.util.ArrayList;
 import java.util.List;

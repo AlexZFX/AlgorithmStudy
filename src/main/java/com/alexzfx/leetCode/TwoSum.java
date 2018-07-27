@@ -1,4 +1,4 @@
-package com.alexzfx.leetCode.twoSum;
+package com.alexzfx.leetCode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Author : Alex
  * Date : 2017/12/29 14:55
- * Description :
+ * Description : 1 fin
  * Two Sum
  * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
  * You may assume that each input would have exactly one solution, and you may not use the same element twice.
