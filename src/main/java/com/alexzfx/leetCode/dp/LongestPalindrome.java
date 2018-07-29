@@ -1,4 +1,4 @@
-package com.alexzfx.leetCode;
+package com.alexzfx.leetCode.dp;
 
 /**
  * Author : Alex
