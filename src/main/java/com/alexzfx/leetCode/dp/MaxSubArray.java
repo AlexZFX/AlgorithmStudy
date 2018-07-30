@@ -24,4 +24,37 @@ public class MaxSubArray {
         }
         return max;
     }
+
+//    //分治解法
+//    public int maxSubArray(int[] nums) {
+//        return maxSubArray(nums, 0, nums.length - 1);
+//    }
+//
+//    private int maxSubArray(int[] nums, int left, int right) {
+//        if (left == right) {
+//            return nums[left];
+//        }
+//        int mid = (left + right) / 2;
+//        int leftSum = maxSubArray(nums, left, mid);
+//        int rightSum = maxSubArray(nums, mid + 1, right);
+//        int leftBorderSum = 0, maxLeftBorderSum = Integer.MIN_VALUE;//定义左边界子序列的和
+//        for (int i = mid; i >= left; i--) {
+//            leftBorderSum += nums[i];
+//            if (leftBorderSum > maxLeftBorderSum) {
+//                maxLeftBorderSum = leftBorderSum;
+//            }
+//        }
+//        int rightBorderSum = 0, maxRightBorderSum = Integer.MIN_VALUE;//定义右边界子序列的和
+//        for (int i = mid + 1; i <= right; i++) {
+//            rightBorderSum += nums[i];
+//            if (rightBorderSum > maxRightBorderSum) {
+//                maxRightBorderSum = rightBorderSum;
+//            }
+//        }
+//        int midSum = maxLeftBorderSum + maxRightBorderSum;
+//        if (midSum >= leftSum && midSum >= rightSum) {
+//            return midSum;
+//        }
+//        return Math.max(leftSum, rightSum);
+//    }
 }
