@@ -13,25 +13,49 @@ import java.util.*;
  */
 public class LetterCombinations {
 
-    private static Map<Character, char[]> map = new HashMap<Character, char[]>();
+    private static Map<Character, char[]> characterMap = new HashMap<Character, char[]>();
 
     static {
-        map.put('2', new char[]{'a', 'b', 'c'});
-        map.put('3', new char[]{'d', 'e', 'f'});
-        map.put('4', new char[]{'g', 'h', 'i'});
-        map.put('5', new char[]{'j', 'k', 'l'});
-        map.put('6', new char[]{'m', 'n', 'o'});
-        map.put('7', new char[]{'p', 'q', 'r', 's'});
-        map.put('8', new char[]{'t', 'u', 'v'});
-        map.put('9', new char[]{'w', 'x', 'y', 'z'});
+        characterMap.put('2', new char[]{'a', 'b', 'c'});
+        characterMap.put('3', new char[]{'d', 'e', 'f'});
+        characterMap.put('4', new char[]{'g', 'h', 'i'});
+        characterMap.put('5', new char[]{'j', 'k', 'l'});
+        characterMap.put('6', new char[]{'m', 'n', 'o'});
+        characterMap.put('7', new char[]{'p', 'q', 'r', 's'});
+        characterMap.put('8', new char[]{'t', 'u', 'v'});
+        characterMap.put('9', new char[]{'w', 'x', 'y', 'z'});
     }
 
     public static void main(String[] args) {
         LetterCombinations letterCombinations = new LetterCombinations();
-        System.out.println(letterCombinations.letterCombinations("23").toString());
+        System.out.println(letterCombinations.letterCombinations("234").toString());
     }
+//    //队列解法
+//    public List<String> letterCombinations(String digits) {
+//        if (digits == null || digits.length() == 0) {
+//            return Collections.emptyList();
+//        }
+//        int len = 1;
+//        char[] chars = digits.toCharArray();
+//        LinkedList<String> res = new LinkedList<String>();
+//        char[] tempChars;
+//        res.addLast("");
+//        for (int i = 0; i < chars.length; i++) {
+//            tempChars = characterMap.get(chars[i]);
+//            String s = res.getFirst();
+//            len = s.length();
+//            while (s.length() == len) {
+//                s = res.removeFirst();
+//                for (char tempChar : tempChars) {
+//                    res.addLast(s + tempChar);
+//                }
+//                s = res.getFirst();
+//            }
+//        }
+//        return res;
+//    }
 
-    //TODO 错误结果
+    //计算改变添加字母位置解法。
     public List<String> letterCombinations(String digits) {
         if (digits == null || digits.length() == 0) {
             return Collections.emptyList();
@@ -39,7 +63,7 @@ public class LetterCombinations {
         int len = 1;
         char[] chars = digits.toCharArray();
         for (char aChar : chars) {
-            len *= map.get(aChar).length;
+            len *= characterMap.get(aChar).length;
         }
         List<String> res = new ArrayList<String>(len);
         StringBuffer[] stringBuffers = new StringBuffer[len];
@@ -49,11 +73,14 @@ public class LetterCombinations {
         char[] numChars;
         int charLen;
         for (char aChar : chars) {
-            numChars = map.get(aChar);
+            numChars = characterMap.get(aChar);
             charLen = numChars.length;
+            //改变 间隔 数目，间隔n个改变添加的字母。
+            int templen = len / charLen;
             for (int i = 0; i < stringBuffers.length; i++) {
-                stringBuffers[i].append(numChars[i % charLen]);
+                stringBuffers[i].append(numChars[(i / templen) % charLen]);
             }
+            len = templen;
         }
         for (StringBuffer stringBuffer : stringBuffers) {
             res.add(stringBuffer.toString());
