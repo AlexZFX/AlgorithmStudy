@@ -17,7 +17,7 @@ public class RemoveElements {
         return head.val == val ? head.next : head;
     }
 
-//    //个人瓜皮解法
+//    //个人解法
 //    public ListNode removeElements(ListNode head, int val) {
 //        if (head == null) {
 //            return null;
