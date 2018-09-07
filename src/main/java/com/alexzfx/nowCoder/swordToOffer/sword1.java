@@ -19,7 +19,6 @@ public class sword1 {
         if (width == 0) {
             return false;
         }
-        int x, y;//最终选择的坐标
         //选择最右上角的一个，为一行里最大的，一列里最小的，比较后可以排除一行或一列
         for (int i = 0, j = width - 1; ; ) {
             if (array[i][j] == target) {
