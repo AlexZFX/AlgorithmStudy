@@ -33,7 +33,6 @@ public class AtMostNGivenDigitSet {
             count += start;
         }
         // 同位数可添加的数字个数
-        int x = 1;
         boolean equal = false;
         // 不相等的时候，可以
         for (int i = 0; i < s.toCharArray().length; i++) {
@@ -45,6 +44,7 @@ public class AtMostNGivenDigitSet {
                     } else {
                         count += 1;
                     }
+                    //数组本身是有序的，如果相等则必然已经处理完的小于的情况
                 } else if (D[j].charAt(0) == s.charAt(i)) {
                     //如果是最后一位
                     if (i == n - 1) {

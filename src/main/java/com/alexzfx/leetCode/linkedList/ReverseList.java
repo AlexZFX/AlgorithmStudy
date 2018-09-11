@@ -18,7 +18,7 @@ public class ReverseList {
         }
         ListNode pre = head;
         ListNode now = head.next;
-        ListNode next = head.next.next;
+        ListNode next;
         head.next = null;
         while (now != null) {
             next = now.next;
