@@ -23,7 +23,7 @@ public class Flatten {
         treeNode1.right = treeNode3;
         treeNode4.right = treeNode5;
         Flatten flatten = new Flatten();
-        flatten.flattenTree(treeNode);
+        flatten.flatten(treeNode);
         System.out.println(1);
     }
 
