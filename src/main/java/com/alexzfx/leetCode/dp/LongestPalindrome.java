@@ -8,6 +8,9 @@ package com.alexzfx.leetCode.dp;
  * 最长回文字符串
  * 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为1000。
  * <p>
+ * 应该有一种向中间添加间隔字符的复杂度更低
+ * <p>
+ * <p>
  * 我写的中的bytes都是错误用法，实际应该为 char[] = toCharArray。
  * 但是bytes的也通过了。。。先不改了
  */
