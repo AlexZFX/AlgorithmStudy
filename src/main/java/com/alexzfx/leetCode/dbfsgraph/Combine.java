@@ -1,4 +1,4 @@
-package com.alexzfx.leetCode.dbfs;
+package com.alexzfx.leetCode.dbfsgraph;
 
 import java.util.ArrayList;
 import java.util.List;

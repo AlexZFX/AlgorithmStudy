@@ -1,4 +1,4 @@
-package com.alexzfx.leetCode.dbfs;
+package com.alexzfx.leetCode.dbfsgraph;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -44,14 +44,14 @@ public class Partition {
 
     private void dfs(int start, List<String> tempList, List<List<String>> res) {
         if (start >= len) {
-            res.add(tempList);
+            res.add(new ArrayList<>(tempList));
             return;
         }
         for (int i = start; i < len; i++) {
             if (dp[start][i]) {
                 String s = new String(chars, start, i - start + 1);
                 tempList.add(s);
-                dfs(i + 1, new ArrayList<>(tempList), res);
+                dfs(i + 1, tempList, res);
                 tempList.remove(tempList.size() - 1);
             }
         }
