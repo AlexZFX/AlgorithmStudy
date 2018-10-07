@@ -9,7 +9,7 @@ package com.alexzfx.leetCode.dp;
  */
 public class MaxSubArray {
 
-    //动态规划解法
+    //动态规划解法，一个temp变量即可
     public int maxSubArray(int[] nums) {
         int[] f = new int[nums.length];
         int max = Integer.MIN_VALUE;
