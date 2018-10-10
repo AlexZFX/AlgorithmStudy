@@ -8,15 +8,15 @@
     <artifactId>AlgorithmStudy</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>26.0-jre</version>
-        </dependency>
+    <!--<dependencies>-->
+    <!--&lt;!&ndash; https://mvnrepository.com/artifact/com.google.guava/guava &ndash;&gt;-->
+    <!--<dependency>-->
+    <!--<groupId>com.google.guava</groupId>-->
+    <!--<artifactId>guava</artifactId>-->
+    <!--<version>26.0-jre</version>-->
+    <!--</dependency>-->
 
-    </dependencies>
+    <!--</dependencies>-->
 
     <build>
         <plugins>
