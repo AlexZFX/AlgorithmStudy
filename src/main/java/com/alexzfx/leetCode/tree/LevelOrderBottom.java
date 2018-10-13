@@ -23,7 +23,7 @@ public class LevelOrderBottom {
             return;
         }
         if (res.size() < level) {
-            res.add(new ArrayList<>());
+            res.add(0, new ArrayList<>());
         }
 
         res.get(res.size() - level).add(root.val);
