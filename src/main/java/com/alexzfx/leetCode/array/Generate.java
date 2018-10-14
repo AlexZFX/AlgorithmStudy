@@ -1,7 +1,5 @@
 package com.alexzfx.leetCode.array;
 
-import com.google.common.collect.Lists;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -18,7 +16,8 @@ public class Generate {
             return Collections.emptyList();
         }
         List<List<Integer>> lists = new ArrayList<>(numRows);
-        List<Integer> list1 = Lists.newArrayList(1);
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
         lists.add(list1);
         List<Integer> tempList;
         // n-1 次 ，应该有 i+1个数字

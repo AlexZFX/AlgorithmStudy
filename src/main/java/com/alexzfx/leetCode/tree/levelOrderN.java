@@ -10,7 +10,7 @@ import java.util.List;
  * <p>
  * 给定一个N叉树，返回其节点值的层序遍历。 (即从左到右，逐层遍历)。
  */
-public class levelOrder {
+public class levelOrderN {
 
     //递归解法
     public List<List<Integer>> levelOrder(Node root) {
