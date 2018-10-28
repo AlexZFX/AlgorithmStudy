@@ -5,7 +5,7 @@ import com.alexzfx.leetCode.struct.ListNode;
 /**
  * Author : Alex
  * Date : 2018/10/1 9:54
- * Description :
+ * Description : 160. 相交链表
  */
 public class GetIntersectionNode {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

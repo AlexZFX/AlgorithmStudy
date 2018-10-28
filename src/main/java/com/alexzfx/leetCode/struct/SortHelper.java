@@ -3,7 +3,7 @@ package com.alexzfx.leetCode.struct;
 import java.util.Arrays;
 import java.util.Random;
 
-import static com.alexzfx.leetCode.struct.MergeSort.mergeSort;
+import static com.alexzfx.leetCode.struct.HeapSort.heapSort;
 
 /**
  * Author : Alex
@@ -17,7 +17,7 @@ public class SortHelper {
         for (int i = 0; i < 1000; i++) {
             nums[i] = random.nextInt(100);
         }
-        mergeSort(nums);
+        heapSort(nums);
         System.out.println(Arrays.toString(nums));
     }
 
